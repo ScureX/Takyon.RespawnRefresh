@@ -1,0 +1,17 @@
+{
+	"Name": "Takyon.RespawnRefresh",
+	"Description": "Refreshes ability and ordnance on respawn",
+	"LoadPriority": 2,
+	"RequiredOnClient": false,
+	"Version": "1.0.0",
+
+	"Scripts": [
+		{
+			"Path": "takyon_respawnrefresh.nut",
+			"RunOn": "SERVER && MP",
+			"ServerCallback": {
+				"After": "RespawnRefreshInit"
+			}
+		}
+	]
+}
